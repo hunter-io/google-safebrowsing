@@ -6,7 +6,7 @@ The server requires a Google API key to run, which can be acquired from Google D
 
 Run the container:
 ```
-docker run -p 8080:80 christiandt/google-safebrowsing -apikey "APIKEY"
+docker run -p 8080:80 quay.io/hunter-io/google-safebrowsing -apikey "APIKEY"
 ```
 
 ## Google Safe Browsing API Extremely Simple Example
