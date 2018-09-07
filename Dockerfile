@@ -1,7 +1,7 @@
-FROM golang:1.6
+FROM golang:1.11-alpine
+
+RUN apk add git ca-certificates
 
 RUN go get github.com/google/safebrowsing/cmd/sbserver
-
-WORKDIR /go/bin
 
 ENTRYPOINT ["sbserver", "-srvaddr", "0.0.0.0:80"]
